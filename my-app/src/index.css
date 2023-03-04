@@ -1,13 +1,143 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+}
+.navbar-brand {
+  position: absolute;
+  top: 0;
+  left: 0;
+  float: left;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar-nav {
+  float: right;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 60px;
+  list-style: none;
+}
+.navbar-nav li a {
+  
+  font-family: "Times New Roman", sans-serif;
+  color: white;
+  font-size: 25px; /* adjust the size as desired */
+  text-decoration: none; /* remove underline */
+  padding-right: 100px;
+}
+
+
+.navbar-nav li:last-child {
+  padding-right: 0;
+}
+.nav-item {
+  margin-left: 1rem;
+}
+
+@media (max-width: 991px) {
+  .navbar-nav {
+    float: none;
+    justify-content: center;
+  }
+}
+.header-logo {
+  position: static;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  z-index: 2; /* increase z-index to overlap with header image */
+}
+
+.home-header {
+  position: relative; /* remove overflow: hidden */
+  height: 800px;
+  background-image: url('./images/img1.jpg'); /* add header image as background */
+  background-size: cover;
+  background-position: center;
+}
+
+.text-overlay h1{
+  justify-content: left;
+  
+}
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1; /* lower z-index to be behind header image */
+}
+
+.header-image {
+  position: relative;
+  height: 500px;
+}
+
+.header-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  z-index: 1;
+}
+
+.header-line {
+  position: absolute;
+  bottom: 5rem;
+  width: 100%;
+  height: 1px;
+  border: none;
+  background-color: #ccc;
+  z-index: 1;
+}
+
+.header-text {
+  position: absolute;
+  bottom: 2rem;
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+  color: white;
+}
+
+/* TEMP: second page properties */
+.second_page {
+  height: 500px;
+  background-color: white;
+}
+
+.second_page h3 {
+  padding-top: 6rem;
+  padding-left: 8rem;
+}
+
+/* TEMP: third page */
+
+.third_page {
+  height: 600px;
+  background-color: #3E54AC;
+}
+
+.third_page h1 {
+  text-align: center; /* fix typo */
+}
+
+.placeholder-container {
+  display: flex;
+  justify-content: center;
+}
+
+.placeholder {
+  width: 200px;
+  height: 200px;
+  background-color: #f1f1f1;
+  padding-left: 8rem;
+  padding-right: 3rem;
 }

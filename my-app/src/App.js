@@ -1,24 +1,88 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./index.css";
+import headerIMG from "./images/img1.jpg";
+import logo from "./images/logo.png";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <>
+      <header class="home-header header-with-bg">
+        <div className="container-fluid p-0">
+          <nav className="navbar navbar-expand-lg navbar-light bg-transparent header-nav">
+            <div className="container-fluid">
+              <a className="navbar-brand" href="#">
+                <img src={logo} alt="Logo" />
+              </a>
+              <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li className="nav-item">
+                  <a className="nav-link" href="#">
+                    Home
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="#">
+                    About Us
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="#">
+                    Our Services
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="#">
+                    Careers
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="#">
+                    Contact Us
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+
+        <div class="header-image">
+          
+          <div class="text-overlay">
+            <h1>Expert staffing and technology <br></br>
+              consulting solutions</h1>
+            <p>Some additional text here</p>
+          </div>
+          <hr class="header-line" />
+          <div class="header-text">
+            <p>Some additional text below the line</p>
+          </div>
+        </div>
       </header>
-    </div>
+
+      <div className="second_page">
+        <h3>About Us</h3>
+        <p style={{ color: "black", paddingLeft: "8rem", paddingTop: "1rem", maxWidth: "50%", display: "inline-block" }}>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vestibulum,
+          ex eu hendrerit dignissim, nisi nunc eleifend mauris, eu dapibus quam est in nulla.
+          Maecenas gravida elit vel libero varius, et convallis lectus commodo. Duis id
+          pretium velit, in ultrices velit. Fusce consequat mauris sed nunc sagittis
+          pellentesque. Donec id mauris lectus. Suspendisse potenti. Donec pellentesque
+          imperdiet magna, sed tincidunt tellus luctus nec. Sed sit amet est eleifend,
+          volutpat ante eu, tristique quam. Suspendisse eget nibh ac quam tincidunt viverra
+          vel vel purus. Aenean id odio ut quam tincidunt sodales a ut odio.
+        </p>
+        <img src="https://via.placeholder.com/150" alt="placeholder" style={{ float: "right", paddingRight: "15rem" }} />
+      </div>
+
+      <div className="third_page">
+        <h1 style={{ textAlign: "center", paddingTop: "6rem" }}>What We Do</h1>
+        <h3 style={{ textAlign: "center" }}> Services We Offer </h3>
+        <div className="placeholder">
+          <div className="placeholder__box"></div>
+          <div className="placeholder__box"></div>
+          <div className="placeholder__box"></div>
+        </div>
+      </div>
+    </>
   );
 }
 
