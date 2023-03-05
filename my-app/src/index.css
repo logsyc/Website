@@ -259,6 +259,10 @@ nav {
   margin-top: 0.5rem;
 }
 
+.firstThirdH{
+  padding-top : 1rem;
+}
+
 
 /*Footer begins*/
 .App-footer {
@@ -336,6 +340,146 @@ nav {
   height: 50px;
 }
 
+
+
+
+/* Temp fourth page*/
+.fourth_page {
+  height: 120vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-top: 3rem;
+  padding-left: 3rem;
+}
+
+.how_we_do_it {
+  color: #3E54AC;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.line {
+  height: 100%;
+  width: 1px;
+  background-color: #3E54AC;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 2rem;
+}
+
+.holders {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 5rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+.holder {
+  display: inline-block;
+  width: calc(25% - 2.5rem);
+  margin-bottom: 5rem;
+  text-align: center;
+}
+
+.holder i {
+  font-size: 3rem;
+  color: #3E54AC;
+  margin-bottom: 1.5rem;
+}
+
+.holder h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #3E54AC;
+}
+
+.holder p {
+  font-size: 1rem;
+  color: #777;
+  line-height: 1.5;
+  margin: 0;
+}
+
+
+
+/*temp fifth page */
+
+.fifth_page {
+  background-color: #022241;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+  text-align: center;
+}
+
+.fifth_page h3 {
+  color: white;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  padding-top: 2rem;
+  margin-top: 2rem;
+}
+
+.fifth_page p {
+  color: white;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  max-width: 50rem;
+}
+.holders5 {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.holder5 {
+  background-color: #B4E4FF;
+  width: 9rem;
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  border-radius: 20%;
+}
+
+.holder5:hover {
+  transform: translateY(-5px);
+}
+
+
+.holder5 i {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #022241;
+}
+
+.holder-header5 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #022241;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.fifth_page p {
+  margin-bottom: 4rem;
+}
 
 
 
@@ -556,142 +700,57 @@ nav {
 
 
 
-/* Temp fourth page*/
-.fourth_page {
-  height: 120vh;
+/* temp sixth page */ 
+
+
+.sixth_page {
   background-color: white;
+  height: 80vh;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding-top: 3rem;
-  padding-left: 3rem;
+  justify-content: center;
+  align-items: center;
 }
 
-.how_we_do_it {
-  color: #3E54AC;
+
+.sixth_page h3 {
+  color: #022241;
   font-size: 2rem;
-  font-weight: 400;
+  font-weight: 500;
+  margin-top: 3rem;
   margin-bottom: 2rem;
 }
 
-.line {
-  height: 100%;
-  width: 1px;
-  background-color: #3E54AC;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  margin-top: 2rem;
-}
-
-.holders {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-top: 5rem;
-  margin-left: 5rem;
-  margin-right: 5rem;
-}
-
-.holder {
-  display: inline-block;
-  width: calc(25% - 2.5rem);
-  margin-bottom: 5rem;
-  text-align: center;
-}
-
-.holder i {
-  font-size: 3rem;
-  color: #3E54AC;
-  margin-bottom: 1.5rem;
-}
-
-.holder h4 {
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
-  color: #3E54AC;
-}
-
-.holder p {
-  font-size: 1rem;
-  color: #777;
-  line-height: 1.5;
-  margin: 0;
-}
 
 
-
-/*temp fifth page */
-
-.fifth_page {
-  background-color: #022241;
+.sixth_page {
+  background-color: white;
   height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
   padding: 3rem;
   text-align: center;
 }
-
-.fifth_page h3 {
-  color: white;
-  font-size: 2rem;
+.sixth_page h3 {
+  color: #022241;
+  font-size: 2.5rem;
   font-weight: 500;
-  margin-bottom: 2rem;
-  padding-top: 2rem;
-  margin-top: 2rem;
-}
-
-.fifth_page p {
-  color: white;
-  font-size: 1.2rem;
-  line-height: 1.5;
-  max-width: 50rem;
-}
-.holders5 {
-  display: flex;
-  justify-content: center;
-  gap: 3rem;
-}
-
-.holder5 {
-  background-color: #B4E4FF;
-  width: 9rem;
-  height: 10rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 1rem;
-  text-align: center;
-  transition: all 0.3s ease;
-  border-radius: 20%;
-}
-
-.holder5:hover {
-  transform: translateY(-5px);
-}
-
-
-.holder5 i {
-  font-size: 3rem;
+  margin-top: 3rem;
   margin-bottom: 1rem;
-  color: #022241;
+  text-align: center;
 }
 
-.holder-header5 {
-  font-size: 1.2rem;
-  font-weight: 500;
-  color: #022241;
-  margin-bottom: 0.5rem;
-  text-transform: uppercase;
+.sixth_page hr {
+  width: 4rem;
+  height: 0.2rem;
+  background-color: #022241;
+  border: none;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  font-size: 0;
 }
 
-.fifth_page p {
-  margin-bottom: 4rem;
-}
 
 

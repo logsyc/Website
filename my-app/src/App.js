@@ -47,7 +47,7 @@ function App() {
         </div>
 
         <div class="header-image">
-          
+
           <div class="text-overlay">
             <h1><span className="Animate">E</span>xpert Staffing and Technology <br></br>
               Consulting Solutions</h1>
@@ -62,8 +62,8 @@ function App() {
       <div className="second_page">
         <h3>About Us</h3>
         <hr className="underline"></hr>
-        <p style={{fontSize:25, color: "grey", paddingLeft: "8rem", paddingTop: "3rem", maxWidth: "50%", display: "inline-block", lineHeight: 1.5 }}>
-        Tech Motion is a leading recruiting firm that provides top-notch technical talent to the industry. With a reputation as a provider of IT Services for recruiting and staffing industry experts, we are dedicated to connecting the best tech jobs with the most talented professionals.
+        <p style={{ fontSize: 25, color: "grey", paddingLeft: "8rem", paddingTop: "3rem", maxWidth: "50%", display: "inline-block", lineHeight: 1.5 }}>
+          Tech Motion is a leading recruiting firm that provides top-notch technical talent to the industry. With a reputation as a provider of IT Services for recruiting and staffing industry experts, we are dedicated to connecting the best tech jobs with the most talented professionals.
         </p>
         <img src={sideImg} alt="placeholder" style={{ float: "right", paddingRight: "1rem" }} />
       </div>
@@ -71,7 +71,7 @@ function App() {
       <div className="third_page">
         <h1 style={{ textAlign: "center", paddingTop: "6rem" }}>What We Do</h1>
         <div className="placeholder-wrapper">
-          <div className="placeholder">
+          <div className="placeholder firstThirdH">
 
             <FontAwesomeIcon icon={faBriefcase} className="fa-solid fa-camera fa-3x" />
             <h3>IT Staffing</h3>
@@ -161,6 +161,15 @@ function App() {
           </div>
         </div>
       </div>
+
+
+      <div className="sixth_page">
+        <h3>Our Clients</h3>
+        <hr></hr>
+        <h4 className="our_clients_text">Serving over 1000 satisfied clients</h4>
+      </div>
+
+
 
 
 
