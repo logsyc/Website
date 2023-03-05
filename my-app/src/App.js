@@ -2,7 +2,8 @@ import React from "react";
 import "./index.css";
 import headerIMG from "./images/img1.jpg";
 import logo from "./images/logo.png";
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBriefcase, faCheckCircle, faBullseye, faCogs, faGraduationCap} from '@fortawesome/free-solid-svg-icons';
 function App() {
   return (
     <>
@@ -45,7 +46,7 @@ function App() {
         </div>
 
         <div class="header-image">
-
+          
           <div class="text-overlay">
             <h1>Expert staffing and technology <br></br>
               consulting solutions</h1>
@@ -74,52 +75,49 @@ function App() {
       </div>
 
       <div className="third_page">
-        <h1 style={{ textAlign: "center", paddingTop: "6rem" }}>What We Do</h1>
-        <h3 style={{ textAlign: "center" }}> Services We Offer </h3>
-        <div className="placeholder">
-          <div className="placeholder__box"></div>
-          <div className="placeholder__box"></div>
-          <div className="placeholder__box"></div>
-        </div>
-      </div>
+  <h1 style={{textAlign: "center", paddingTop: "6rem"}}>What We Do</h1>
+  <div className="placeholder-wrapper">
+    <div className="placeholder">
+      
+      <FontAwesomeIcon icon={faBriefcase} />
+      <h3>IT Staffing</h3>
+      <p>TechMotion has extensive capabilities in the IT staffing and consulting landscape.</p>
+    </div>
+    <div className="placeholder">
+      
+      <FontAwesomeIcon icon={faCheckCircle} />
+      <h3>Automated Testing</h3>
+      <p>Automated and Manual testing services to ensure great user experience for any product.</p>
+    </div>
+    <div className="placeholder">
+    
+      <FontAwesomeIcon icon={faCheckCircle} />
+      <h3>Manual Testing</h3>
+      <p>Automated and Manual testing services to ensure great user experience for any product.</p>
+    </div>
+    <div className="placeholder">
+      
+      <FontAwesomeIcon icon={faBullseye} />
+      <h3>Opportunities</h3>
+      <p>Find & capture career opportunities in the IT industry to frame a successful career.</p>
+    </div>
+    <div className="placeholder">
+      
+      <FontAwesomeIcon icon={faCogs} />
+      <h3>Consulting</h3>
+      <p>TechMotion has extensive capabilities in the IT staffing and consulting landscape.</p>
+    </div>
+    <div className="placeholder">
+      
+      <FontAwesomeIcon icon={faGraduationCap} />
+      <h3>Training</h3>
+      <p>Upskill yourself with latest IT courses and stay ahead in the competition.</p>
+    </div>
+  </div>
+</div>
 
-      
-      
-      
-      
-      <footer className="App-footer">
-        <img src={logo} alt="Logo" className="ft-logo"/>
-        <div className="App-footer-row">
-        
-          <div className="App-footer-col1">
-            <h2>Our Services</h2>
-            <ul>
-              <li>IT Staffing and Consulting</li>
-              <li>Testing & QA</li>
-              <li>Career Placement</li>
-              <li>IT Staffing</li>
-            </ul>
-          </div>
-          <div className="App-footer-col2">
-            <h2>Useful Links</h2>
-            <ul>
-              <li><a href="">Services</a></li>
-              <li><a href="">Contact Us</a></li>
-            </ul>
-          </div>
-          <div className="App-footer-col3">
-            <h2>Contact Us</h2>
-            <ul>
-              <li>1234 Giant Street
-Dallas, TX 76040</li>
-              <li>(555)-123-456</li>
-              <li>dallas@techmotion.com</li>
-            </ul>
-          </div>
-          </div>
-        
-        
-      </footer>
+
+
     </>
   );
 }
