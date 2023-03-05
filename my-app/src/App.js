@@ -62,8 +62,8 @@ function App() {
       <div className="second_page">
         <h3>About Us</h3>
         <hr className="underline"></hr>
-        <p style={{fontSize:25, color: "grey", paddingLeft: "8rem", paddingTop: "3rem", maxWidth: "50%", display: "inline-block", lineHeight: 1.5 }}>
-        Tech Motion is a leading recruiting firm that provides top-notch technical talent to the industry. With a reputation as a provider of IT Services for recruiting and staffing industry experts, we are dedicated to connecting the best tech jobs with the most talented professionals.
+        <p style={{ fontSize: 25, color: "grey", paddingLeft: "8rem", paddingTop: "3rem", maxWidth: "50%", display: "inline-block", lineHeight: 1.5 }}>
+          Tech Motion is a leading recruiting firm that provides top-notch technical talent to the industry. With a reputation as a provider of IT Services for recruiting and staffing industry experts, we are dedicated to connecting the best tech jobs with the most talented professionals.
         </p>
         <img src={sideImg} alt="placeholder" style={{ float: "right", paddingRight: "1rem" }} />
       </div>
@@ -71,7 +71,7 @@ function App() {
       <div className="third_page">
         <h1 style={{ textAlign: "center", paddingTop: "6rem" }}>What We Do</h1>
         <div className="placeholder-wrapper">
-          <div className="placeholder">
+          <div className="placeholder firstThirdH">
 
             <FontAwesomeIcon icon={faBriefcase} className="fa-solid fa-camera fa-3x" />
             <h3>IT Staffing</h3>
@@ -111,10 +111,73 @@ function App() {
       </div>
 
 
+      <div className="fourth_page">
+        <h3 className="how_we_do_it">How We Do It</h3>
+        <div className="line"></div>
+        <div className="holders">
+          <div className="holder firstH">
+            <i className="fas fa-laptop"></i>
+            <h4 className="holder-header">IT Staffing & Consulting</h4>
+            <p className="holder-paragraph">TechMotion has extensive capabilities in the IT staffing and consulting landscape.</p>
+          </div>
+          <div className="holder secondH">
+            <i className="fas fa-cogs"></i>
+            <h4 className="holder-header">Automated and Manual Testing Services</h4>
+            <p className="holder-paragraph">Automated and Manual testing services to ensure great user experience for any product.</p>
+          </div>
+          <div className="holder thirdH">
+            <i className="fas fa-handshake"></i>
+            <h4 className="holder-header">Career Opportunities</h4>
+            <p className="holder-paragraph">Find & capture career opportunities in the IT industry to frame a successful career.</p>
+          </div>
+          <div className="holder fourthH">
+            <i className="fas fa-laptop-code"></i>
+            <h4 className="holder-header">Software Development</h4>
+            <p className="holder-paragraph">Delivering robust and reliable software solutions that drive innovation and growth.</p>
+          </div>
+        </div>
+      </div>
 
 
-      <footer id = "footer" className="App-footer">
-        <ScrollToTop />
+      <div class="fifth_page">
+        <h3 class="why_us">Why Us</h3>
+        <p class="why_us_paragraph">We aim to deliver high-quality, tailored IT solutions that meet the unique needs of our clients. Our experienced team is committed to providing exceptional service and building strong relationships.</p>
+        <div class="holders5">
+          <div class="holder5">
+            <i class="fas fa-book"></i>
+            <h4 class="holder-header5">Readability</h4>
+          </div>
+          <div class="holder5">
+            <i class="fas fa-lightbulb"></i>
+            <h4 class="holder-header5">Innovation</h4>
+          </div>
+          <div class="holder5">
+            <i class="fas fa-users"></i>
+            <h4 class="holder-header5">Collaboration</h4>
+          </div>
+          <div class="holder5">
+            <i class="fas fa-award"></i>
+            <h4 class="holder-header5">Excellence</h4>
+          </div>
+        </div>
+      </div>
+
+
+      <div className="sixth_page">
+        <h3>Our Clients</h3>
+        <hr></hr>
+        <h4 className="our_clients_text">Serving over 1000 satisfied clients</h4>
+      </div>
+
+
+
+
+
+
+
+
+
+      <footer className="App-footer">
         <img src={logo} alt="Logo" className="ft-logo" />
         <div className="App-footer-row">
 
@@ -146,7 +209,6 @@ function App() {
         </div>
 
 
-      </footer>
     </>
   );
 }
