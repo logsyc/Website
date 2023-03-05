@@ -1,9 +1,10 @@
 import React from "react";
 import "./index.css";
-import headerIMG from "./images/img1.jpg";
+import ScrollToTop from "react-scroll-to-top";
+import sideImg from "./images/big.png";
 import logo from "./images/logo.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBriefcase, faCheckCircle, faBullseye, faCogs, faGraduationCap} from '@fortawesome/free-solid-svg-icons';
+import { faBriefcase, faCheckCircle, faBullseye, faCogs, faGraduationCap } from '@fortawesome/free-solid-svg-icons';
 function App() {
   return (
     <>
@@ -48,81 +49,75 @@ function App() {
         <div class="header-image">
 
           <div class="text-overlay">
-            <h1>Expert staffing and technology <br></br>
-              consulting solutions</h1>
-            <p>Some additional text here</p>
+            <h1><span className="Animate">E</span>xpert Staffing and Technology <br></br>
+              Consulting Solutions</h1>
           </div>
-          <hr class="header-line" />
+          <hr class="header-line"></hr>
           <div class="header-text">
-            <p>Some additional text below the line</p>
+            <a href="#footer"><button class="button-64" role="button"><span class="text">Contact Us</span></button></a>
           </div>
         </div>
       </header>
 
       <div className="second_page">
         <h3>About Us</h3>
-        <p style={{ color: "black", paddingLeft: "8rem", paddingTop: "1rem", maxWidth: "50%", display: "inline-block" }}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vestibulum,
-          ex eu hendrerit dignissim, nisi nunc eleifend mauris, eu dapibus quam est in nulla.
-          Maecenas gravida elit vel libero varius, et convallis lectus commodo. Duis id
-          pretium velit, in ultrices velit. Fusce consequat mauris sed nunc sagittis
-          pellentesque. Donec id mauris lectus. Suspendisse potenti. Donec pellentesque
-          imperdiet magna, sed tincidunt tellus luctus nec. Sed sit amet est eleifend,
-          volutpat ante eu, tristique quam. Suspendisse eget nibh ac quam tincidunt viverra
-          vel vel purus. Aenean id odio ut quam tincidunt sodales a ut odio.
+        <hr className="underline"></hr>
+        <p style={{fontSize:25, color: "grey", paddingLeft: "8rem", paddingTop: "3rem", maxWidth: "50%", display: "inline-block", lineHeight: 1.5 }}>
+        Tech Motion is a leading recruiting firm that provides top-notch technical talent to the industry. With a reputation as a provider of IT Services for recruiting and staffing industry experts, we are dedicated to connecting the best tech jobs with the most talented professionals.
         </p>
-        <img src="https://via.placeholder.com/150" alt="placeholder" style={{ float: "right", paddingRight: "15rem" }} />
+        <img src={sideImg} alt="placeholder" style={{ float: "right", paddingRight: "1rem" }} />
       </div>
 
       <div className="third_page">
-  <h1 style={{textAlign: "center", paddingTop: "6rem"}}>What We Do</h1>
-  <div className="placeholder-wrapper">
-    <div className="placeholder">
-      
-      <FontAwesomeIcon icon={faBriefcase} />
-      <h3>IT Staffing</h3>
-      <p>TechMotion has extensive capabilities in the IT staffing and consulting landscape.</p>
-    </div>
-    <div className="placeholder">
-      
-      <FontAwesomeIcon icon={faCheckCircle} />
-      <h3>Automated Testing</h3>
-      <p>Automated and Manual testing services to ensure great user experience for any product.</p>
-    </div>
-    <div className="placeholder">
-    
-      <FontAwesomeIcon icon={faCheckCircle} />
-      <h3>Manual Testing</h3>
-      <p>Automated and Manual testing services to ensure great user experience for any product.</p>
-    </div>
-    <div className="placeholder">
-      
-      <FontAwesomeIcon icon={faBullseye} />
-      <h3>Opportunities</h3>
-      <p>Find & capture career opportunities in the IT industry to frame a successful career.</p>
-    </div>
-    <div className="placeholder">
-      
-      <FontAwesomeIcon icon={faCogs} />
-      <h3>Consulting</h3>
-      <p>TechMotion has extensive capabilities in the IT staffing and consulting landscape.</p>
-    </div>
-    <div className="placeholder">
-      
-      <FontAwesomeIcon icon={faGraduationCap} />
-      <h3>Training</h3>
-      <p>Upskill yourself with latest IT courses and stay ahead in the competition.</p>
-    </div>
-  </div>
-</div>
+        <h1 style={{ textAlign: "center", paddingTop: "6rem" }}>What We Do</h1>
+        <div className="placeholder-wrapper">
+          <div className="placeholder">
+
+            <FontAwesomeIcon icon={faBriefcase} className="fa-solid fa-camera fa-3x" />
+            <h3>IT Staffing</h3>
+            <p>TechMotion has extensive capabilities in the IT staffing and consulting landscape.</p>
+          </div>
+          <div className="placeholder">
+
+            <FontAwesomeIcon icon={faCheckCircle} className="fa-solid fa-camera fa-3x" />
+            <h3>Automated Testing</h3>
+            <p>Automated and Manual testing services to ensure great user experience for any product.</p>
+          </div>
+          <div className="placeholder">
+
+            <FontAwesomeIcon icon={faCheckCircle} className="fa-solid fa-camera fa-3x" />
+            <h3>Manual Testing</h3>
+            <p>Automated and Manual testing services to ensure great user experience for any product.</p>
+          </div>
+          <div className="placeholder">
+
+            <FontAwesomeIcon icon={faBullseye} className="fa-solid fa-camera fa-3x" />
+            <h3>Opportunities</h3>
+            <p>Find & capture career opportunities in the IT industry to frame a successful career.</p>
+          </div>
+          <div className="placeholder">
+
+            <FontAwesomeIcon icon={faCogs} className="fa-solid fa-camera fa-3x" />
+            <h3>Consulting</h3>
+            <p>TechMotion has extensive capabilities in the IT staffing and consulting landscape.</p>
+          </div>
+          <div className="placeholder">
+
+            <FontAwesomeIcon icon={faGraduationCap} className="fa-solid fa-camera fa-3x" />
+            <h3>Training</h3>
+            <p>Upskill yourself with latest IT courses and stay ahead in the competition.</p>
+          </div>
+        </div>
+      </div>
 
 
 
-        
-      <footer className="App-footer">
-        <img src={logo} alt="Logo" className="ft-logo"/>
+
+      <footer id = "footer" className="App-footer">
+        <ScrollToTop />
+        <img src={logo} alt="Logo" className="ft-logo" />
         <div className="App-footer-row">
-        
+
           <div className="App-footer-col1">
             <h2>Our Services</h2>
             <ul>
@@ -143,14 +138,14 @@ function App() {
             <h2>Contact Us</h2>
             <ul>
               <li>1234 Giant Street
-Dallas, TX 76040</li>
+                Dallas, TX 76040</li>
               <li>(555)-123-456</li>
               <li>dallas@techmotion.com</li>
             </ul>
           </div>
-          </div>
-        
-        
+        </div>
+
+
       </footer>
     </>
   );
