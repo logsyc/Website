@@ -3,7 +3,7 @@ import "./index.css";
 import headerIMG from "./images/img1.jpg";
 import logo from "./images/logo.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBriefcase, faCheckCircle, faBullseye, faCogs, faGraduationCap} from '@fortawesome/free-solid-svg-icons';
+import { faBriefcase, faCheckCircle, faBullseye, faCogs, faGraduationCap } from '@fortawesome/free-solid-svg-icons';
 function App() {
   return (
     <>
@@ -75,54 +75,109 @@ function App() {
       </div>
 
       <div className="third_page">
-  <h1 style={{textAlign: "center", paddingTop: "6rem"}}>What We Do</h1>
-  <div className="placeholder-wrapper">
-    <div className="placeholder">
-      
-      <FontAwesomeIcon icon={faBriefcase} />
-      <h3>IT Staffing</h3>
-      <p>TechMotion has extensive capabilities in the IT staffing and consulting landscape.</p>
-    </div>
-    <div className="placeholder">
-      
-      <FontAwesomeIcon icon={faCheckCircle} />
-      <h3>Automated Testing</h3>
-      <p>Automated and Manual testing services to ensure great user experience for any product.</p>
-    </div>
-    <div className="placeholder">
-    
-      <FontAwesomeIcon icon={faCheckCircle} />
-      <h3>Manual Testing</h3>
-      <p>Automated and Manual testing services to ensure great user experience for any product.</p>
-    </div>
-    <div className="placeholder">
-      
-      <FontAwesomeIcon icon={faBullseye} />
-      <h3>Opportunities</h3>
-      <p>Find & capture career opportunities in the IT industry to frame a successful career.</p>
-    </div>
-    <div className="placeholder">
-      
-      <FontAwesomeIcon icon={faCogs} />
-      <h3>Consulting</h3>
-      <p>TechMotion has extensive capabilities in the IT staffing and consulting landscape.</p>
-    </div>
-    <div className="placeholder">
-      
-      <FontAwesomeIcon icon={faGraduationCap} />
-      <h3>Training</h3>
-      <p>Upskill yourself with latest IT courses and stay ahead in the competition.</p>
-    </div>
-  </div>
-</div>
+        <h1 style={{ textAlign: "center", paddingTop: "6rem" }}>What We Do</h1>
+        <div className="placeholder-wrapper">
+          <div className="placeholder">
+
+            <FontAwesomeIcon icon={faBriefcase} />
+            <h3>IT Staffing</h3>
+            <p>TechMotion has extensive capabilities in the IT staffing and consulting landscape.</p>
+          </div>
+          <div className="placeholder">
+
+            <FontAwesomeIcon icon={faCheckCircle} />
+            <h3>Automated Testing</h3>
+            <p>Automated and Manual testing services to ensure great user experience for any product.</p>
+          </div>
+          <div className="placeholder">
+
+            <FontAwesomeIcon icon={faCheckCircle} />
+            <h3>Manual Testing</h3>
+            <p>Automated and Manual testing services to ensure great user experience for any product.</p>
+          </div>
+          <div className="placeholder">
+
+            <FontAwesomeIcon icon={faBullseye} />
+            <h3>Opportunities</h3>
+            <p>Find & capture career opportunities in the IT industry to frame a successful career.</p>
+          </div>
+          <div className="placeholder">
+
+            <FontAwesomeIcon icon={faCogs} />
+            <h3>Consulting</h3>
+            <p>TechMotion has extensive capabilities in the IT staffing and consulting landscape.</p>
+          </div>
+          <div className="placeholder">
+
+            <FontAwesomeIcon icon={faGraduationCap} />
+            <h3>Training</h3>
+            <p>Upskill yourself with latest IT courses and stay ahead in the competition.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div className="fourth_page">
+        <h3 className="how_we_do_it">How We Do It</h3>
+        <div className="line"></div>
+        <div className="holders">
+          <div className="holder firstH">
+            <i className="fas fa-laptop"></i>
+            <h4 className="holder-header">IT Staffing & Consulting</h4>
+            <p className="holder-paragraph">TechMotion has extensive capabilities in the IT staffing and consulting landscape.</p>
+          </div>
+          <div className="holder secondH">
+            <i className="fas fa-cogs"></i>
+            <h4 className="holder-header">Automated and Manual Testing Services</h4>
+            <p className="holder-paragraph">Automated and Manual testing services to ensure great user experience for any product.</p>
+          </div>
+          <div className="holder thirdH">
+            <i className="fas fa-handshake"></i>
+            <h4 className="holder-header">Career Opportunities</h4>
+            <p className="holder-paragraph">Find & capture career opportunities in the IT industry to frame a successful career.</p>
+          </div>
+          <div className="holder fourthH">
+            <i className="fas fa-laptop-code"></i>
+            <h4 className="holder-header">Software Development</h4>
+            <p className="holder-paragraph">Delivering robust and reliable software solutions that drive innovation and growth.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="fifth_page">
+        <h3 class="why_us">Why Us</h3>
+        <p class="why_us_paragraph">We aim to deliver high-quality, tailored IT solutions that meet the unique needs of our clients. Our experienced team is committed to providing exceptional service and building strong relationships.</p>
+        <div class="holders5">
+          <div class="holder5">
+            <i class="fas fa-book"></i>
+            <h4 class="holder-header5">Readability</h4>
+          </div>
+          <div class="holder5">
+            <i class="fas fa-lightbulb"></i>
+            <h4 class="holder-header5">Innovation</h4>
+          </div>
+          <div class="holder5">
+            <i class="fas fa-users"></i>
+            <h4 class="holder-header5">Collaboration</h4>
+          </div>
+          <div class="holder5">
+            <i class="fas fa-award"></i>
+            <h4 class="holder-header5">Excellence</h4>
+          </div>
+        </div>
+      </div>
 
 
 
-        
+
+
+
+
       <footer className="App-footer">
-        <img src={logo} alt="Logo" className="ft-logo"/>
+        <img src={logo} alt="Logo" className="ft-logo" />
         <div className="App-footer-row">
-        
+
           <div className="App-footer-col1">
             <h2>Our Services</h2>
             <ul>
@@ -143,14 +198,14 @@ function App() {
             <h2>Contact Us</h2>
             <ul>
               <li>1234 Giant Street
-Dallas, TX 76040</li>
+                Dallas, TX 76040</li>
               <li>(555)-123-456</li>
               <li>dallas@techmotion.com</li>
             </ul>
           </div>
-          </div>
-        
-        
+        </div>
+
+
       </footer>
     </>
   );
