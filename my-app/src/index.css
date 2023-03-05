@@ -121,23 +121,41 @@ nav {
 /* TEMP: third page */
 
 .third_page {
-  height: 600px;
-  background-color: #3E54AC;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #022241;
+  color: white;
+  border: 1px solid white;
+  padding: 2rem;
+  box-sizing: border-box; /* added box-sizing property */
 }
 
-.third_page h1 {
-  text-align: center; /* fix typo */
-}
-
-.placeholder-container {
+.placeholder-wrapper {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
 }
 
 .placeholder {
-  width: 200px;
-  height: 200px;
-  background-color: #f1f1f1;
-  padding-left: 8rem;
-  padding-right: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #022241;
+  color: white;
+  padding: 2rem;
+  margin: 1rem;
+  width: 25%;
+  height: 20vh;
+  border: none;
+}
+
+.placeholder p {
+  margin-top: 1rem;
+  font-size: 1.2rem;
 }

@@ -2,7 +2,8 @@ import React from "react";
 import "./index.css";
 import headerIMG from "./images/img1.jpg";
 import logo from "./images/logo.png";
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBriefcase, faCheckCircle, faBullseye, faCogs, faGraduationCap} from '@fortawesome/free-solid-svg-icons';
 function App() {
   return (
     <>
@@ -74,14 +75,49 @@ function App() {
       </div>
 
       <div className="third_page">
-        <h1 style={{ textAlign: "center", paddingTop: "6rem" }}>What We Do</h1>
-        <h3 style={{ textAlign: "center" }}> Services We Offer </h3>
-        <div className="placeholder">
-          <div className="placeholder__box"></div>
-          <div className="placeholder__box"></div>
-          <div className="placeholder__box"></div>
-        </div>
-      </div>
+  <h1 style={{textAlign: "center", paddingTop: "6rem"}}>What We Do</h1>
+  <div className="placeholder-wrapper">
+    <div className="placeholder">
+      
+      <FontAwesomeIcon icon={faBriefcase} />
+      <h3>IT Staffing</h3>
+      <p>TechMotion has extensive capabilities in the IT staffing and consulting landscape.</p>
+    </div>
+    <div className="placeholder">
+      
+      <FontAwesomeIcon icon={faCheckCircle} />
+      <h3>Automated Testing</h3>
+      <p>Automated and Manual testing services to ensure great user experience for any product.</p>
+    </div>
+    <div className="placeholder">
+    
+      <FontAwesomeIcon icon={faCheckCircle} />
+      <h3>Manual Testing</h3>
+      <p>Automated and Manual testing services to ensure great user experience for any product.</p>
+    </div>
+    <div className="placeholder">
+      
+      <FontAwesomeIcon icon={faBullseye} />
+      <h3>Opportunities</h3>
+      <p>Find & capture career opportunities in the IT industry to frame a successful career.</p>
+    </div>
+    <div className="placeholder">
+      
+      <FontAwesomeIcon icon={faCogs} />
+      <h3>Consulting</h3>
+      <p>TechMotion has extensive capabilities in the IT staffing and consulting landscape.</p>
+    </div>
+    <div className="placeholder">
+      
+      <FontAwesomeIcon icon={faGraduationCap} />
+      <h3>Training</h3>
+      <p>Upskill yourself with latest IT courses and stay ahead in the competition.</p>
+    </div>
+  </div>
+</div>
+
+
+
     </>
   );
 }
