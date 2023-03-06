@@ -4,11 +4,7 @@ import ScrollToTop from "react-scroll-to-top";
 import sideImg from "./images/big.png";
 import logo from "./images/logo.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBriefcase, faCheckCircle, faBullseye, faCogs, faGraduationCap,faCircleCheck,faLightbulb,faUser,faAward } from '@fortawesome/free-solid-svg-icons';
-import logos from "./images/logos.png";
-
-
-
+import { faBriefcase, faCheckCircle, faBullseye, faCogs, faGraduationCap } from '@fortawesome/free-solid-svg-icons';
 function App() {
   return (
     <>
@@ -16,27 +12,32 @@ function App() {
         <div className="container-fluid p-0">
           <nav className="navbar navbar-expand-lg navbar-light bg-transparent header-nav">
             <div className="container-fluid">
-              <a className="navbar-brand" href="">
+              <a className="navbar-brand" href="#">
                 <img src={logo} alt="Logo" />
               </a>
               <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li className="nav-item">
-                  <a className="nav-link" href="#AboutUs">
+                  <a className="nav-link" href="#">
+                    Home
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="#">
                     About Us
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#OurServices">
+                  <a className="nav-link" href="#">
                     Our Services
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#WhyUs">
-                    Why Us?
+                  <a className="nav-link" href="#">
+                    Careers
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#footer">
+                  <a className="nav-link" href="#">
                     Contact Us
                   </a>
                 </li>
@@ -53,12 +54,12 @@ function App() {
           </div>
           <hr class="header-line"></hr>
           <div class="header-text">
-            <a href="#AboutUs"><button class="button-64" role="button"><span class="text">Learn More</span></button></a>
+            <a href="#footer"><button class="button-64" role="button"><span class="text">Contact Us</span></button></a>
           </div>
         </div>
       </header>
 
-      <div id="AboutUs" className="second_page">
+      <div className="second_page">
         <h3>About Us</h3>
         <hr className="underline"></hr>
         <p style={{ fontSize: 25, color: "grey", paddingLeft: "8rem", paddingTop: "3rem", maxWidth: "50%", display: "inline-block", lineHeight: 1.5 }}>
@@ -67,10 +68,8 @@ function App() {
         <img src={sideImg} alt="placeholder" style={{ float: "right", paddingRight: "1rem" }} />
       </div>
 
-      <div id="OurServices" className="third_page">
-        <h1 style={{ textAlign: "center", paddingTop: "4rem", fontSize:"2.5rem" , color:"#98d4ff"}}>What We Do</h1>
-        <h2 style={{ textAlign: "center" , fontSize:"1.5rem", fontWeight:"lighter", paddingTop:"1rem"}}>Services We Offer</h2>
-        <hr className="Lines"></hr>
+      <div className="third_page">
+        <h1 style={{ textAlign: "center", paddingTop: "6rem" }}>What We Do</h1>
         <div className="placeholder-wrapper">
           <div className="placeholder firstThirdH">
 
@@ -114,51 +113,59 @@ function App() {
 
       <div className="fourth_page">
         <h3 className="how_we_do_it">How We Do It</h3>
-        <div className="line"></div>
+        <hr></hr>
+        <div className="line">
+          <div class="vertical-line">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+
+        </div>
         <div className="holders">
           <div className="holder firstH">
-            <i className="fas fa-laptop"></i>
-            <h4 className="holder-header">IT Staffing & Consulting</h4>
+          <FontAwesomeIcon icon={ faGraduationCap} className= "education" />
+            <h4 className="holder-header">Education and Training</h4>
             <p className="holder-paragraph">TechMotion has extensive capabilities in the IT staffing and consulting landscape.</p>
           </div>
           <div className="holder secondH">
-            <i className="fas fa-cogs"></i>
-            <h4 className="holder-header">Automated and Manual Testing Services</h4>
+          <FontAwesomeIcon icon={ faGraduationCap} className= "education"  />
+            <h4 className="holder-header">Education and Training</h4>
             <p className="holder-paragraph">Automated and Manual testing services to ensure great user experience for any product.</p>
           </div>
           <div className="holder thirdH">
-            <i className="fas fa-handshake"></i>
-            <h4 className="holder-header">Career Opportunities</h4>
+          <FontAwesomeIcon icon={ faGraduationCap} className= "strategy"  />
+            <h4 className="holder-header">Strategy and Roadmap</h4>
             <p className="holder-paragraph">Find & capture career opportunities in the IT industry to frame a successful career.</p>
           </div>
           <div className="holder fourthH">
-            <i className="fas fa-laptop-code"></i>
-            <h4 className="holder-header">Software Development</h4>
+          <FontAwesomeIcon icon={ faGraduationCap}  className= "strategy" />
+            <h4 className="holder-header">Strategy and Roadmap</h4>
             <p className="holder-paragraph">Delivering robust and reliable software solutions that drive innovation and growth.</p>
           </div>
         </div>
       </div>
 
 
-      <div id = "WhyUs" class="fifth_page">
+      <div class="fifth_page">
         <h3 class="why_us">Why Us</h3>
-        <hr></hr>
         <p class="why_us_paragraph">We aim to deliver high-quality, tailored IT solutions that meet the unique needs of our clients. Our experienced team is committed to providing exceptional service and building strong relationships.</p>
         <div class="holders5">
           <div class="holder5">
-            <FontAwesomeIcon icon={faCircleCheck} id="#icon" className="fa-solid fa-icons fa-3x" />
-            <h4 class="holder-header5">Reliability</h4>
+            <i class="fas fa-book"></i>
+            <h4 class="holder-header5">Readability</h4>
           </div>
           <div class="holder5">
-          <FontAwesomeIcon icon={faLightbulb}  className="fa-solid fa-icons fa-3x "/>
+            <i class="fas fa-lightbulb"></i>
             <h4 class="holder-header5">Innovation</h4>
           </div>
           <div class="holder5">
-          <FontAwesomeIcon icon={faUser} className="fa-solid fa-icons fa-3x"/>
+            <i class="fas fa-users"></i>
             <h4 class="holder-header5">Collaboration</h4>
           </div>
           <div class="holder5">
-          <FontAwesomeIcon icon={faAward} className="fa-solid fa-icons fa-3x" />
+            <i class="fas fa-award"></i>
             <h4 class="holder-header5">Excellence</h4>
           </div>
         </div>
@@ -169,7 +176,6 @@ function App() {
         <h3>Our Clients</h3>
         <hr></hr>
         <h4 className="our_clients_text">Serving over 1000 satisfied clients</h4>
-        <img src={logos}></img>
       </div>
 
 
@@ -179,7 +185,8 @@ function App() {
 
 
 
-      <footer id="footer" className="App-footer">
+
+      <footer className="App-footer">
         <img src={logo} alt="Logo" className="ft-logo" />
         <div className="App-footer-row">
 
@@ -209,9 +216,9 @@ function App() {
             </ul>
           </div>
         </div>
-        <ScrollToTop></ScrollToTop>
-      </footer>
 
+
+      </footer>
     </>
   );
 }
