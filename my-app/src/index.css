@@ -2,7 +2,6 @@
 * {
   margin: 0;
   padding: 0;
-  scroll-behavior: smooth;
   font-family: 'Golos Text', sans-serif;
 }
 .navbar-brand {
@@ -52,7 +51,7 @@
 
 .home-header {
   position: relative; /* remove overflow: hidden */
-  height: 725px;
+  height: 600px;
   background-image: url('./images/img1.jpg'); /* add header image as background */
   background-size: cover;
   background-position: center;
@@ -81,7 +80,7 @@ nav {
 
 .header-image {
   position: relative;
-  height: 80%;
+  height: 500px;
 }
 
 .header-image img {
@@ -101,7 +100,7 @@ nav {
 }
 
 .text-overlay h1{
-  padding-top: 10%;
+  padding-top: 15%;
   text-align: left;
   font-size: 35px;
   line-height: 150%;
@@ -125,18 +124,16 @@ nav {
 
 .header-text {
   position: absolute;
-  bottom: -7rem;
+  bottom: -5rem;
   left: 45%;
   text-align: center;
   z-index: 1;
   color: white;
   align-items: center;
-  
 }
 
 .header-text a{
   text-decoration: none;
-  
 }
 
 
@@ -228,12 +225,7 @@ nav {
   padding: 2rem;
   box-sizing: border-box; /* added box-sizing property */
 }
-.Lines{
-  background-color: white;
-  height:1rem;
-  width: 10rem;
-  margin-top:1rem;
-}
+
 
 .placeholder-wrapper {
   display: flex;
@@ -272,6 +264,239 @@ nav {
 }
 
 
+/*Footer begins*/
+.App-footer {
+  background-color: #022241;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.App-footer-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  font-size: 100%;
+}
+
+.App-footer-col1 {
+  flex: 1;
+  margin-left: 20%;
+  line-height: 150%;
+  
+}
+.App-footer-col1 h2{
+  color: #8be3ff;
+}
+
+.App-footer-col2 h2{
+  color: #8be3ff;
+}
+
+.App-footer-col3 h2{
+  color: #8be3ff;
+}
+.App-footer-col2 {
+  flex: 1;
+  margin-left: 20px;
+  line-height: 150%;
+}
+
+.App-footer-col2 li a 
+{
+  color: white;
+  text-decoration: none;
+}
+.App-footer-col3 {
+  flex: 1;
+  margin-left: 20px;
+  line-height: 150%;
+}
+
+.App-footer h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.App-footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.App-footer ul li {
+  margin-bottom: 5px;
+}
+
+.App-footer p {
+  margin: 0;
+}
+
+.ft-logo{
+  
+  width: 10%;
+  height: 50px;
+}
+
+
+
+
+/* Temp fourth page*/
+.fourth_page {
+  height: 120vh;
+  background-color: white;
+  display: flex;
+ 
+  padding-top: 3rem;
+  padding-left: 3rem;
+}
+
+.how_we_do_it {
+  color: #3E54AC;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.line {
+  height: 100%;
+  width: 1px;
+  background-color: #3E54AC;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 2rem;
+  position: relative;
+}
+
+.holders {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  
+}
+
+.holder {
+  display: block;
+  width: calc(25% - 2.5rem);
+  margin-bottom: 5rem;
+  text-align: center;
+}
+
+.holder i {
+  font-size: 3rem;
+  color: #3E54AC;
+  margin-bottom: 1.5rem;
+}
+
+.holder h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #3E54AC;
+}
+
+.holder p {
+  font-size: 1rem;
+  color: #777;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.firstH{
+  margin-top: 20rem;
+  margin-left: 7rem;
+}
+
+.thirdH{
+  margin-top: 10rem;
+  margin-right: -35rem;
+}
+
+.fourthH{
+  margin-top: 30rem;
+  margin-right: 11rem;
+}
+
+.secondH{
+  margin-left: -34rem;
+}
+
+
+
+/*temp fifth page */
+
+.fifth_page {
+  background-color: #022241;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+  text-align: center;
+}
+
+.fifth_page h3 {
+  color: white;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  padding-top: 2rem;
+  margin-top: 2rem;
+}
+
+.fifth_page p {
+  color: white;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  max-width: 50rem;
+}
+.holders5 {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.holder5 {
+  background-color: #B4E4FF;
+  width: 9rem;
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  border-radius: 20%;
+}
+
+.holder5:hover {
+  transform: translateY(-5px);
+}
+
+
+.holder5 i {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #022241;
+}
+
+.holder-header5 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #022241;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.fifth_page p {
+  margin-bottom: 4rem;
+}
+
 
 
 /* Temp fourth page*/
@@ -293,10 +518,22 @@ nav {
   margin-bottom: 2rem;
 }
 
+/*horizontal line below the h3 element*/
+.fourth_page hr {
+  width: 8rem;
+  height: 0.2rem;
+  background-color: #3E54AC;
+  border: none;
+  margin: 0 auto;
+  margin-bottom: -1rem;
+  font-size: 0;
+  margin-left: 2rem;
+}
+
 .line {
   height: 100%;
   width: 1px;
-  background-color: #3E54AC;
+  background-color: gray;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -341,35 +578,78 @@ nav {
 }
 
 
+.firstH{
+  margin-top: 17rem;
+  margin-left: 12rem;
+}
+
+.thirdH{
+  margin-top: 10rem;
+  margin-right: -33rem;
+}
+
+.fourthH{
+  margin-top: 29rem;
+  margin-right: 13rem;
+}
+
+.secondH{
+  margin-left: -34rem;
+  margin-top: 0rem;
+}
+
+.dot {
+  position: absolute;
+  top: 50%; /* position the dots in the middle of the line */
+  left: -5px; /* adjust the position of the dots */
+  width: 10px;
+  height: 10px;
+  border-radius: 50%; /* make the dots round */
+  background-color: #022241;
+}
+
+/* use :nth-of-type selector to target each dot */
+.dot:nth-of-type(1) {
+  transform: translateY(2000%);
+}
+
+.dot:nth-of-type(2) {
+  transform: translateY(-2700%);
+}
+
+.dot:nth-of-type(3) {
+  transform: translateY(400%);
+}
+
+.dot:nth-of-type(4) {
+  transform: translateY(-1100%);
+}
+
+/* icon placement in fourth page*/
+
+.education{
+  font-size: 2em;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  margin-left: 14rem;
+}
+
+.strategy{
+  font-size: 2em;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  margin-right: 14rem;
+}
+
+
+
+
+
+
+
+
 
 /*temp fifth page */
-
-
-
-
-.fifth_page h3 {
-  color: #98d4ff;
-  font-size: 2rem;
-  font-weight: 500;
-  margin-bottom: 2rem;
-  padding-top: 2rem;
-  margin-top: 2rem;
-}
-
-.fifth_page hr {
-  
-  width: 5rem;
-  height: 0.2rem;
-  background-color: #ffffff;
-  border: none;
-  margin-bottom: 2rem;
-  font-size: 0;
-}
-.fa-icons
-{
-  padding: 3rem;
-}
-
 
 .fifth_page {
   background-color: #022241;
@@ -381,7 +661,14 @@ nav {
   text-align: center;
 }
 
-
+.fifth_page h3 {
+  color: white;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  padding-top: 2rem;
+  margin-top: 2rem;
+}
 
 .fifth_page p {
   color: white;
@@ -571,4 +858,3 @@ nav {
   width: 10%;
   height: 50px;
 }
-
