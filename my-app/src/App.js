@@ -7,8 +7,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBriefcase, faCheckCircle, faBullseye, faCogs, faGraduationCap,faCircleCheck,faLightbulb,faUser,faAward } from '@fortawesome/free-solid-svg-icons';
 import logos from "./images/logos.png";
 
-
-
 function App() {
   return (
     <>
@@ -114,26 +112,34 @@ function App() {
 
       <div className="fourth_page">
         <h3 className="how_we_do_it">How We Do It</h3>
-        <div className="line"></div>
+        <hr></hr>
+        <div className="line"><div class="vertical-line">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+
+        </div>
         <div className="holders">
           <div className="holder firstH">
-            <i className="fas fa-laptop"></i>
-            <h4 className="holder-header">IT Staffing & Consulting</h4>
+          <FontAwesomeIcon icon={ faGraduationCap} className= "education" />
+            <h4 className="holder-header">Education and Training</h4>
             <p className="holder-paragraph">TechMotion has extensive capabilities in the IT staffing and consulting landscape.</p>
           </div>
           <div className="holder secondH">
-            <i className="fas fa-cogs"></i>
-            <h4 className="holder-header">Automated and Manual Testing Services</h4>
+          <FontAwesomeIcon icon={ faGraduationCap} className= "education"  />
+            <h4 className="holder-header">Education and Training</h4>
             <p className="holder-paragraph">Automated and Manual testing services to ensure great user experience for any product.</p>
           </div>
           <div className="holder thirdH">
-            <i className="fas fa-handshake"></i>
-            <h4 className="holder-header">Career Opportunities</h4>
+          <FontAwesomeIcon icon={ faGraduationCap} className= "strategy"  />
+            <h4 className="holder-header">Strategy and Roadmap</h4>
             <p className="holder-paragraph">Find & capture career opportunities in the IT industry to frame a successful career.</p>
           </div>
           <div className="holder fourthH">
-            <i className="fas fa-laptop-code"></i>
-            <h4 className="holder-header">Software Development</h4>
+          <FontAwesomeIcon icon={ faGraduationCap}  className= "strategy" />
+            <h4 className="holder-header">Strategy and Roadmap</h4>
             <p className="holder-paragraph">Delivering robust and reliable software solutions that drive innovation and growth.</p>
           </div>
         </div>
